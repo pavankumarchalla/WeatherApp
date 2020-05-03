@@ -26,6 +26,6 @@ class WeatherService {
         completion(weatherResponse.main)
       }
       completion(nil)
-    }
+    }.resume()
   }
 }
