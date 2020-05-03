@@ -8,7 +8,6 @@
 
 import Foundation
 import Combine
-import SwiftUI
 
 class WeatherViewModel: ObservableObject {
   
@@ -17,7 +16,7 @@ class WeatherViewModel: ObservableObject {
   @Published var weather = Weather()
   
   init() {
-    weatherService = WeatherService()
+    self.weatherService = WeatherService()
   }
   
   var temperature: String {
